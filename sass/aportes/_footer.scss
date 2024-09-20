@@ -1,0 +1,27 @@
+#footer_3{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(176, 176, 176);
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer_logo img{
+    width: 90px;
+}
+
+
+.footer_links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.footer_facebook , .footer_instagram , .footer_youtube{
+    font-size: 25px
+}
+
+.img_logo3{
+    width: 60px;
+}

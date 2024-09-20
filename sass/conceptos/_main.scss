@@ -1,0 +1,37 @@
+#concepto{
+    width: 10%0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+
+#imagenes img{
+    width: 100%;
+    height: 100%;
+}
+
+.img1 , .img2 , .img3 , .img4{
+    display: inline;
+    padding-right: 800px;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.texto_1 , .texto_2 , .texto_3 , .texto_4{
+    padding: 50px;
+    margin: 50px;
+}

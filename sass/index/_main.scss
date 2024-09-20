@@ -1,0 +1,36 @@
+#main{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 100vh;
+
+}
+
+.titulo{
+    padding: 30px;
+    margin: 30px;
+}
+
+.imagen_portada {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.texto_portada{
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
+ 
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    align-items: center;
+    padding: 5px 0;
+    margin-top: 100px;
+ }
+ 

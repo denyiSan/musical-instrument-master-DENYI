@@ -1,0 +1,49 @@
+#header{
+    max-width: 1920px;
+    height: 70px;
+}
+
+
+#navBar{
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    background-color: rgb(9, 93, 250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav{
+    display: inline-flex;
+    justify-content: end;
+    list-style: none;
+    
+}
+
+
+.nav-link1{
+    padding-right: 10px;
+    color: black;
+}
+
+.nav-link2{
+    padding-right: 10px;
+    color: black;
+}
+
+.nav-link3{
+    padding-right: 10px;
+    color: black;
+}
+
+.nav-link4{
+    padding-right: 10px;
+    color: black;
+}
+
+.nav-link5{
+    padding-right: 10px;
+    color: black;
+}

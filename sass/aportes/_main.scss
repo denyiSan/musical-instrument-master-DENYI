@@ -1,0 +1,84 @@
+#aportes{
+    width: 10%0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: inline-block;
+    padding-left: 100px;
+    
+}
+
+.barra_1{
+    display: flex;
+    display: block;
+    padding-bottom: 30px;
+    padding-left: 400px;
+
+}
+
+.barra_2{
+    display: flex;
+    display: block;
+    padding-bottom: 30px;
+    padding-left: 400px;
+
+}
+
+.barra_3{
+    display: flex;
+    display: block;
+    padding-left: 400px;
+    
+}
+
+.aportes-img{
+    width: 700px;
+    padding-left: 300px;
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+
+
+.rating{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2rem;
+   display: inline-flex;
+   padding-left: 400px;
+   }
+   
+           .rating{
+               direction: rtl;
+               unicode-bidi: bidi-override;
+               font-size: 2rem;
+               display: inline-flex;
+           }
+   
+           .rating input{
+               display: none;
+           }
+   
+           .rating label{
+               color: #ddd;
+               cursor: pointer;
+               padding: 0 0.1rem;
+           }
+   
+           .rating input:checked ~ label,
+           .rating label:hover,
+           .rating label:hover ~ label {
+               color: gold;
+           }
+           
+           
+$transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
+
+.contenido {
+  padding: 20px;
+  background-color: $transparente;
+  border-radius: 10px; // Opcional, para bordes redondeados
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
+}
