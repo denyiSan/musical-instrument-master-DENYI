@@ -17,26 +17,50 @@
     <header id="header">
 
 
+
+
+        <div class="navbar-mobile"></div>
+            <div class="logo">
+                <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/conceptos.html">Conceptos</a></li>
+                <li><a href="../pages/aportes.html">Aportes</a></li>
+                <li><a href="../pages/aprende-a-tocar.html">Aprende a tocar</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+
+
+
         <nav id="navBar">
 
-            <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
-
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link1" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link2" href="../pages/conceptos.html">Conceptos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link3" href="../pages/aportes.html">Aportes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link4" href="../pages/aprende-a-tocar.html">Aprende a tocar</a>
-                </li>
-                <li class="nav-item"></li>
-                    <a class="nav-link5" href="../pages/contacto.html">Contacto</a>
-                </li>
+            <div class="navBar">
+                    
+                    <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
+    
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link1" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link2" href="../pages/conceptos.html">Conceptos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link3" href="../pages/aportes.html">Aportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link4" href="../pages/aprende-a-tocar.html">Aprende a tocar</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link5" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
     </header>
@@ -45,16 +69,16 @@
         <section id="contacto">
         <form action="" id="form"></form>
         <h1 class="texto_13">contacto</h1>
-        <label for="nombre">Nombre:</label>
+        <label class="etiqueta_1" for="nombre">Nombre:</label>
         <input type="text" name="nombre">
 
-        <label for="correo">Correo:</label>
+        <label class="etiqueta_2" for="correo">Correo:</label>
         <input type="email" name="email">
 
-        <label for="mensaje">Mensaje</label>
+        <label class="etiqueta_3" for="mensaje">Mensaje</label>
         <textarea name="mensaje" id="mensaje"></textarea>
 
-        <select name="instrumentos" id="instrumentos">
+        <select class="etiqueta_4" name="instrumentos" id="instrumentos">
             <option value="instrumentos">instrumentos</option>
             <option value="Guitarra">Guitarra</option>
             <option value="Guitarra-electrica">Guitarra electrica</option> 

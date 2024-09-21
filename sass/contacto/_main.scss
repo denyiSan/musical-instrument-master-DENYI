@@ -7,6 +7,15 @@
     margin-top: 100px;
     display: inline-block;
     padding-left: 100px;
+
+
+    
+$transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
+
+  padding: 20px;
+  background-color: $transparente;
+  border-radius: 10px; // Opcional, para bordes redondeados
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
 }
 
 
@@ -17,6 +26,14 @@
 }
 
 .form_mapa{
-    padding-left: 400px;
-    padding-top: 100px;
+    display: inline-block;
+    
+}
+
+
+.etiqueta_1 , .etiqueta_2 , .etiqueta_3 , .etiqueta_4{
+    display: flex;
+    display: block;
+    margin-bottom: 20px;
+    
 }

@@ -4,7 +4,7 @@
 }
 
 
-#navBar{
+.navBar{
     width: 100%;
     height: 100%;
     padding: 0 50px;
@@ -47,3 +47,99 @@
     padding-right: 10px;
     color: black;
 }
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    .navbar-desktop {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        padding: 1em;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .navbar-mobile {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e4ac1;
+        padding: 1em;
+
+        .logo {
+            img {
+                height: 40px; // Ajusta el tamaño de tu logo
+            }
+        }
+
+        .hamburger {
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                border-top: 1px solid white;
+
+                a {
+                    display: block;
+                    padding: 10px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: none; // Ocultar el checkbox
+        }
+
+        @media (max-width: 768px) {
+            display: flex; // Muestra el navbar móvil
+
+            .menu-toggle:checked + .hamburger + .menu {
+                display: block; // Muestra el menú cuando el checkbox está marcado
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navbar-desktop {
+            display: none; // Oculta el navbar de escritorio
+        }
+    }
+}
+
+
+
+#navBar{
+    display: block; // Estilo para pantallas grandes
+  
+    @media (max-width: 768px) { // Cambia 768px según tus necesidades
+      display: none; // Ocultar en móviles y tabletas
+    }
+  }
+  
