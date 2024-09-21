@@ -6,13 +6,14 @@
     align-items: center;
     margin-top: 100px;
     display: inline-block;
-    padding-left: 100px;
-
+    margin-left: 300px;
+    
 
     
 $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
 
-  padding: 20px;
+  padding: 70px;
+  margin-right: 50px;
   background-color: $transparente;
   border-radius: 10px; // Opcional, para bordes redondeados
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
@@ -20,13 +21,32 @@ $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
 
 
 .texto_13{
-    padding-left: 550px;
-    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
     
 }
 
-.form_mapa{
-    display: inline-block;
+.mapa{  
+display: flex; 
+display: inline;
+
+
+
+
+
+
+
+
+
+    $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
+
+  padding-top: 320px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  background-color: $transparente;
+  border-radius: 50px; // Opcional, para bordes redondeados
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
     
 }
 

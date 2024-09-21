@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
     <link rel="stylesheet" href="../css/style.css">
     <title>musical instruments</title>
 </head>
@@ -19,86 +22,60 @@
 
 
 
-        <div class="navbar-mobile"></div>
-            <div class="logo">
-                <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
-            </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <nav class="navbar">
+            
+            <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
+
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
             <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/conceptos.html">Conceptos</a></li>
-                <li><a href="../pages/aportes.html">Aportes</a></li>
-                <li><a href="../pages/aprende-a-tocar.html">Aprende a tocar</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="animation_1"><a href="../index.html">Inicio</a></li>
+                <li class="animation_2"><a href="../pages/conceptos.html">Conceptos</a></li>
+                <li class="animation_3"><a href="../pages/aportes.html">Aportes</a></li>
+                <li class="animation_4"><a href="../pages/aprende-a-tocar.html">Aprende a tocar</a></li>
+                <li class="animation_5"><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
-        </div>
-
-
-
-
-        <nav id="navBar">
-
-            <div class="navBar">
-                    
-                    <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
-    
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link1" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link2" href="../pages/conceptos.html">Conceptos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link3" href="../pages/aportes.html">Aportes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link4" href="../pages/aprende-a-tocar.html">Aprende a tocar</a>
-                    </li>
-                    <li class="nav-item"></li>
-                        <a class="nav-link5" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
 
     </header>
 
     <main>
-        <section id="contacto">
-        <form action="" id="form"></form>
-        <h1 class="texto_13">contacto</h1>
-        <label class="etiqueta_1" for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
+            <section id="contacto">
+    
+                <form  id="form" action="https://formspree.io/f/xovaowgo" method="POST">
+                <h1 class="texto_13">Contáctanos</h1>
+                <label class="etiqueta_1" for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required>
 
-        <label class="etiqueta_2" for="correo">Correo:</label>
-        <input type="email" name="email">
+                <label class="etiqueta_2" for="correo">Correo:</label>
+                <input type="email" name="email" required>
 
-        <label class="etiqueta_3" for="mensaje">Mensaje</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
+                <label class="etiqueta_3" for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+                
+                
+                <br><label for="mensaje">¿problemas con los instrumentos?</label>
+                <select class="etiqueta_4" name="instrumentos" id="instrumentos">
+                    <option value="instrumentos">instrumentos</option>
+                    <option value="Guitarra">Guitarra</option>
+                    <option value="Guitarra-electrica">Guitarra electrica</option> 
+                    <option value="Piano">piano</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Bateria">Batería</option>
+                </select>
 
-        <select class="etiqueta_4" name="instrumentos" id="instrumentos">
-            <option value="instrumentos">instrumentos</option>
-            <option value="Guitarra">Guitarra</option>
-            <option value="Guitarra-electrica">Guitarra electrica</option> 
-            <option value="Piano">piano</option>
-            <option value="Violin">Violin</option>
-            <option value="Bajo">Bajo</option>
-            <option value="Bateria">Batería</option>
-            
-        </select>
+                <button type="submit" class="input">Enviar Consulta</button>
 
-        <input type="reset" value="Borrar Mensaje">
-        <input type="submit" value="Enviar Consulta">
+            </section>
 
-
-        <section class="form_mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.215386593565!2d-69.9298775!3d18.4698911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89ddc19f5c31%3A0x20fc5fa9155c49a4!2sInstrumentos%20Fernando%20Giraldez!5e0!3m2!1sen!2sdo!4v1725677119802!5m2!1sen!2sdo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.215386593565!2d-69.9298775!3d18.4698911!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x8eaf89ddc19f5c31%3A0x20fc5fa9155c49a4!2sInstrumentos%20Fernando%20Giraldez!5e0!3m2!1sen!2sdo!4v1725677119802!5m2!1sen!2sdo" width="400" height="300" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        
-        </section>
-        
 
     </main>
 

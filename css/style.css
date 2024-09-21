@@ -15,125 +15,110 @@ body {
   max-width: 1920px;
 }
 
-#header {
-  max-width: 1920px;
-  height: 70px;
-}
-
-.navBar {
-  width: 100%;
-  height: 100%;
-  padding: 0 50px;
-  background-color: rgb(9, 93, 250);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav {
-  display: inline-flex;
-  justify-content: end;
-  list-style: none;
-}
-
-.nav-link1 {
-  padding-right: 10px;
-  color: black;
-}
-
-.nav-link2 {
-  padding-right: 10px;
-  color: black;
-}
-
-.nav-link3 {
-  padding-right: 10px;
-  color: black;
-}
-
-.nav-link4 {
-  padding-right: 10px;
-  color: black;
-}
-
-.nav-link5 {
-  padding-right: 10px;
-  color: black;
-}
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
 }
-body .navbar-desktop {
+
+.navbar {
   display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  padding: 1em;
-}
-body .navbar-desktop ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-body .navbar-desktop ul li {
-  display: inline;
-}
-body .navbar-desktop ul a {
-  color: white;
-  text-decoration: none;
-}
-body .navbar-mobile {
-  display: none;
   justify-content: space-between;
   align-items: center;
-  background-color: #0e4ac1;
-  padding: 1em;
+  background-color: #3a319d;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-body .navbar-mobile .logo img {
-  height: 40px;
+.navbar input[type=checkbox] {
+  display: none;
 }
-body .navbar-mobile .hamburger {
-  font-size: 24px;
-  color: white;
+.navbar .hamburger {
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
 }
-body .navbar-mobile .menu {
+.navbar .hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  transition: all 0.3s;
+}
+.navbar .menu {
   display: none;
   list-style: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a319d;
+  width: 100%;
+  z-index: 1;
+  animation: slideDown 0.3s ease;
 }
-body .navbar-mobile .menu li {
-  border-top: 1px solid white;
+.navbar .menu li {
+  margin: 1rem 0;
 }
-body .navbar-mobile .menu li a {
-  display: block;
-  padding: 10px;
-  color: white;
+.navbar .menu li a {
   text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
 }
-body .navbar-mobile .menu-toggle {
-  display: none;
+.navbar .menu li a:hover {
+  color: #000000;
 }
-@media (max-width: 768px) {
-  body .navbar-mobile {
+.navbar input[type=checkbox]:checked + .hamburger + .menu {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu {
+  display: block;
+  flex-direction: row;
+}
+.menu li {
+  margin: 0 1rem;
+}
+
+.hamburger {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu {
     display: flex;
   }
-  body .navbar-mobile .menu-toggle:checked + .hamburger + .menu {
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  body .navbar-desktop {
+  input[type=checkbox] {
     display: none;
   }
 }
-
-#navBar {
-  display: block;
+.animation_1, .animation_2, .animation_3, .animation_4, .animation_5 {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
 }
-@media (max-width: 768px) {
-  #navBar {
+.animation_1:hover, .animation_2:hover, .animation_3:hover, .animation_4:hover, .animation_5:hover {
+  transform: translateX(50px);
+  transition: 1s;
+}
+
+.animation_1, .animation_2, .animation_3, .animation_4, .animation_5 {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .animation_1, .animation_2, .animation_3, .animation_4, .animation_5 {
     display: none;
   }
 }
@@ -200,8 +185,6 @@ body .navbar-mobile .menu-toggle {
 }
 
 #concepto {
-  width: 1920;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,27 +193,70 @@ body .navbar-mobile .menu-toggle {
   padding-left: 100px;
 }
 
-.barra {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.boton {
+  padding: 10px 30px;
+  margin: 0px 0px 50px 500px;
+  background-color: #22748b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.boton:hover {
+  background-color: #022992;
 }
 
-#imagenes img {
+.img_1 {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_1 .reducido_1 {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
 }
 
-.img1, .img2, .img3, .img4 {
-  display: inline;
-  padding-right: 800px;
-  margin-top: 20px;
-  margin-left: 400px;
+.img_2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_2 .reducido_2 {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.img_3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_3 .reducido_3 {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.img_4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_4 .reducido_4 {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
 }
 
 .texto_1, .texto_2, .texto_3, .texto_4 {
-  padding: 50px;
-  margin: 50px;
+  padding-top: 50px;
 }
 
 #footer_2 {
@@ -293,10 +319,10 @@ body .navbar-mobile .menu-toggle {
 }
 
 .aportes-img {
-  width: 700px;
-  padding-left: 300px;
-  margin-left: 180px;
-  margin-top: 50px;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  align-items: center;
 }
 
 .rating {
@@ -377,6 +403,10 @@ body .navbar-mobile .menu-toggle {
   width: 600px;
 }
 
+.barra {
+  padding: 50px;
+}
+
 #footer_4 {
   display: flex;
   justify-content: space-around;
@@ -413,20 +443,29 @@ body .navbar-mobile .menu-toggle {
   align-items: center;
   margin-top: 100px;
   display: inline-block;
-  padding-left: 100px;
-  padding: 20px;
+  margin-left: 300px;
+  padding: 70px;
+  margin-right: 50px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .texto_13 {
-  padding-left: 550px;
-  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
-.form_mapa {
-  display: inline-block;
+.mapa {
+  display: flex;
+  display: inline;
+  padding-top: 320px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .etiqueta_1, .etiqueta_2, .etiqueta_3, .etiqueta_4 {

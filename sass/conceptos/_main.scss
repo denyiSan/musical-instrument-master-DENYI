@@ -1,6 +1,4 @@
 #concepto{
-    width: 1920;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,26 +8,85 @@
 }
 
 
-.barra{
+
+$color-principal: #22748b;
+$color-hover: #022992;
+
+.boton {
+    padding: 10px 30px;
+    margin: 0px 0px 50px 500px;
+    background-color: $color-principal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
+
+
+
+.img_1 {
+    width: 100%; // Ajusta el tamaño del contenedor si es necesario
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    justify-content: center; // Centra la imagen horizontalmente
+    align-items: center; // Centra verticalmente si lo deseas (en caso de ser necesario)
+
+    .reducido_1 {
+      width: 50%; // Cambia este valor para ajustar el tamaño
+      height: auto; // Mantiene la proporción de la imagen
+      border-radius: 50px;
+    }
+  }
 
 
-#imagenes img{
-    width: 100%;
-    height: 100%;
-}
+  .img_2 {
+    width: 100%; // Ajusta el tamaño del contenedor si es necesario
+    display: flex;
+    justify-content: center; // Centra la imagen horizontalmente
+    align-items: center; // Centra verticalmente si lo deseas (en caso de ser necesario)
 
-.img1 , .img2 , .img3 , .img4{
-    display: inline;
-    padding-right: 800px;
-    margin-top: 20px;
-    margin-left: 400px;
-}
+    .reducido_2 {
+      width: 50%; // Cambia este valor para ajustar el tamaño
+      height: auto; // Mantiene la proporción de la imagen
+      border-radius: 50px;
+    }
+  }
 
-.texto_1 , .texto_2 , .texto_3 , .texto_4{
-    padding: 50px;
-    margin: 50px;
+
+  .img_3 {
+    width: 100%; // Ajusta el tamaño del contenedor si es necesario
+    display: flex;
+    justify-content: center; // Centra la imagen horizontalmente
+    align-items: center; // Centra verticalmente si lo deseas (en caso de ser necesario)
+
+    .reducido_3 {
+      width: 50%; // Cambia este valor para ajustar el tamaño
+      height: auto; // Mantiene la proporción de la imagen
+      border-radius: 50px;
+    }
+  }
+
+
+
+  .img_4 {
+    width: 100%; // Ajusta el tamaño del contenedor si es necesario
+    display: flex;
+    justify-content: center; // Centra la imagen horizontalmente
+    align-items: center; // Centra verticalmente si lo deseas (en caso de ser necesario)
+
+    .reducido_4 {
+      width: 50%; // Cambia este valor para ajustar el tamaño
+      height: auto; // Mantiene la proporción de la imagen
+      border-radius: 50px;
+    }
+  }
+
+
+  .texto_1 , .texto_2 , .texto_3 , .texto_4{
+    padding-top: 50px;
 }
