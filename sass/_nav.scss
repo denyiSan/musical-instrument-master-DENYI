@@ -47,7 +47,6 @@ body {
         background-color: $background-color; // Fondo del menú
         width: 100%; // Asegura que el menú use todo el ancho
         z-index: 1; // Asegura que el menú esté por encima de otros elementos
-        animation: slideDown $menu-transition;
 
         li {
             margin: 1rem 0;
@@ -55,10 +54,11 @@ body {
             a {
                 text-decoration: none;
                 color: $text-color;
-                transition: color $menu-transition;
+                transition: transform 0.3s ease;
 
                 &:hover {
                     color: $primary-color;
+                    transform: translateX(10px); // Desplazar el enlace
                 }
             }
         }
@@ -66,8 +66,10 @@ body {
 
     // Mostrar el menú cuando el checkbox está marcado
     input[type="checkbox"]:checked + .hamburger + .menu {
-        display: block;
-        animation: slideDown $menu-transition;
+        display: block; // Mostrar menú
+        @media (min-width: 768px) {
+            animation: slideDown $menu-transition; // Aplicar animación solo en pantallas grandes
+        }
     }
 }
 
@@ -83,46 +85,27 @@ body {
     }
 }
 
-// Estilos para que el menú sea visible en todos los dispositivos
-.menu {
-    display: block; // Siempre mostrar el menú
-    flex-direction: row; // Mostrar en línea
-
-    li {
-        margin: 0 1rem; // Espaciado horizontal entre elementos
-    }
-}
-
-.hamburger {
-    display: flex; // Siempre mostrar el ícono de hamburguesa
-}
-
-// Alternativa si deseas esconder el menú en pantalla grande
-@media (min-width: 768px) {
-    .menu {
-        display: flex; // Mostrar en línea en pantallas grandes
-    }
-
-    input[type="checkbox"] {
-        display: none; // Ocultar checkbox en pantallas grandes
-    }
-}
-
-.animation_1 , .animation_2 , .animation_3 , .animation_4 , .animation_5 {
+// Media Query para pantallas grandes
+@media (min-width: 1024px) {
+.animation_1,
+.animation_2,
+.animation_3,
+.animation_4,
+.animation_5 {
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease;
-    
+
     &:hover {
         transform: translateX(50px);
         transition: 1s;
     }
 }
 
-.animation_1 , .animation_2 , .animation_3 , .animation_4 , .animation_5 {
-    display: flex; // o el valor que necesites
-  
-    @media (max-width: 767px) {
-      display: none; // Oculta en pantallas menores a 768px
+// Animaciones para elementos
+
     }
-  }
+
+    .hamburger {
+        display: none; // Ocultar el ícono de hamburguesa en pantallas grandes
+    }

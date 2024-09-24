@@ -1,4 +1,4 @@
-#footer_5{
+#footer_5 {
     display: flex;
     justify-content: space-around;
     background-color: rgb(35, 158, 53);
@@ -7,10 +7,28 @@
     margin-top: 20vh;
 }
 
-.footer_logo5 img{
-    width: 90px;
+/* Imágenes del pie de página */
+.footer_logo5 img {
+    width: 90px; /* Ancho general para pantallas grandes */
 }
 
-.img_logo5{
-    width: 60px;
+.img_logo5 {
+    width: 60px; /* Ancho general para pantallas grandes */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #footer_5 {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        padding: 20px; /* Aumenta el padding para más espacio */
+    }
+
+    .footer_logo5 img {
+        width: 70px; /* Reduce el tamaño de la imagen */
+    }
+
+    .img_logo5 {
+        width: 50px; /* Reduce el tamaño de la imagen */
+    }
 }
