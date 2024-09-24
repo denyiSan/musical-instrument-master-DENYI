@@ -1,59 +1,68 @@
-#contacto{
-    width: 10%0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    display: inline-block;
-    margin-left: 300px;
-    
-
-    
 $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
 
-  padding: 70px;
-  margin-right: 50px;
-  background-color: $transparente;
-  border-radius: 10px; // Opcional, para bordes redondeados
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
+#contacto {
+    width: 80%; // Ancho en desktop
+    max-width: 500px; // Limitar el ancho máximo
+    height: auto; // Ajustar según contenido
+    display: flex;
+    flex-direction: column; // Alineación vertical
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto; // Centrado automático en horizontal
+    padding: 70px;
+    background-color: $transparente;
+    border-radius: 10px; // Bordes redondeados
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para efecto
+
+    @media (max-width: 768px) {
+        width: 90%; // Aumentar el ancho en móviles
+        margin-top: 50px; // Reduce el margen superior
+        padding: 40px; // Reduce el padding
+        box-shadow: none; // Quitar sombra en móviles si es necesario
+    }
 }
 
-
-.texto_13{
+.texto_13 {
     display: flex;
     justify-content: center;
-    
+    width: 100%; // Asegurarse de que ocupe todo el ancho
+    font-size: 24px; // Tamaño de fuente en desktop
+    margin-bottom: 20px; // Espaciado inferior
+
+    @media (max-width: 768px) {
+        font-size: 18px; // Ajusta el tamaño de fuente en móviles
+        padding: 0 10px; // Añade un poco de padding horizontal
+    }
 }
 
-.mapa{  
-display: flex; 
-display: inline;
-
-
-
-
-
-
-
-
-
-    $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
-
-  padding-top: 320px;
-  padding-left: 30px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  background-color: $transparente;
-  border-radius: 50px; // Opcional, para bordes redondeados
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
-    
-}
-
-
-.etiqueta_1 , .etiqueta_2 , .etiqueta_3 , .etiqueta_4{
+.mapa {
     display: flex;
-    display: block;
-    margin-bottom: 20px;
-    
+    justify-content: center; // Centrar contenido
+    align-items: center; // Centrar verticalmente
+    flex-direction: row; // Mantener alineación horizontal
+    flex-wrap: wrap; // Permitir que los elementos se ajusten si es necesario
+    width: 100%; // Asegurarse de que ocupe todo el ancho
+    padding: 40px; // Ajusta el padding según el diseño
+    background-color: $transparente;
+    border-radius: 20px; // Bordes redondeados
+    margin-right: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+        padding: 20px; // Reduce el padding para pantallas pequeñas
+        border-radius: 15px; // Ajusta el radio de los bordes
+        flex-direction: column; // Alineación vertical en móviles
+    }
+}
+
+.etiqueta_1, .etiqueta_2, .etiqueta_3, .etiqueta_4 {
+    display: block; // Cambiado a block
+    margin-bottom: 20px; // Espaciado entre etiquetas
+    width: 100%; // Asegurarse de que ocupe todo el ancho
+
+    @media (max-width: 768px) {
+        margin-bottom: 10px; // Reduce el margen en pantallas pequeñas
+        font-size: 14px; // Ajusta el tamaño de fuente
+        padding: 0 10px; // Padding para mantener la consistencia
+    }
 }
