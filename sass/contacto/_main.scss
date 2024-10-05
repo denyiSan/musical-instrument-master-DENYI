@@ -45,13 +45,31 @@ $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
     padding: 40px; // Ajusta el padding según el diseño
     background-color: $transparente;
     border-radius: 20px; // Bordes redondeados
-    margin-right: 1000px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 768px) {
-        padding: 20px; // Reduce el padding para pantallas pequeñas
+        padding: 10px; // Reduce el padding para pantallas pequeñas
         border-radius: 15px; // Ajusta el radio de los bordes
         flex-direction: column; // Alineación vertical en móviles
+    }
+}
+
+.map-container {
+    position: relative; // Para mantener el iframe en proporción
+    width: 100%; // Asegúrate de que ocupe todo el ancho
+    overflow: hidden; // Ocultar cualquier desbordamiento
+
+    // Mantener la relación de aspecto
+    height: 0; 
+    padding-bottom: 56.25%; // 16:9 Aspect Ratio
+
+    .map-iframe {
+        position: absolute; // Posicionarlo absolutamente
+        top: 0;
+        left: 0;
+        width: 100%; // Ancho completo
+        height: 100%; // Altura completa
+        border: 0; // Quitar borde del iframe
     }
 }
 

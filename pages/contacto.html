@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contáctanos para obtener más información sobre nuestros cursos de música.">
 
-    <link rel="icon" href="../icons/favicon.ico">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    
-    <link rel="stylesheet" href="../css/style.css">
-    <title>musical instruments</title>
-</head>
+        <link rel="icon" href="../icons/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contacto - Musical Instruments</title>
+    </head>
 <body>
     
     <header id="header">
-
-
-
-
-
         <nav class="navbar">
-            
             <img class="img_logo5" src="../icons/logo-removebg-preview.png" alt="imagen_logo_superior">
-
             <input type="checkbox" id="toggle">
             <label for="toggle" class="hamburger">
                 <div class="line"></div>
@@ -41,52 +30,46 @@
                 <li class="animation_5"><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-            <section id="contacto">
-    
-                <form  id="form" action="https://formspree.io/f/xovaowgo" method="POST">
+        <section id="contacto">
+            <form id="form" action="https://formspree.io/f/xovaowgo" method="POST">
                 <h1 class="texto_13">Contáctanos</h1>
                 <label class="etiqueta_1" for="nombre">Nombre:</label>
                 <input type="text" name="nombre" required>
-
                 <label class="etiqueta_2" for="correo">Correo:</label>
                 <input type="email" name="email" required>
-
-                <label class="etiqueta_3" for="mensaje">Mensaje</label>
+                <label class="etiqueta_3" for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mensaje" required></textarea>
-                
-                
-                <br><label for="mensaje">¿problemas con los instrumentos?</label>
+                <br>
+                <label for="mensaje">¿Problemas con los instrumentos?</label>
                 <select class="etiqueta_4" name="instrumentos" id="instrumentos">
-                    <option value="instrumentos">instrumentos</option>
+                    <option value="instrumentos">Seleccionar instrumento</option>
                     <option value="Guitarra">Guitarra</option>
-                    <option value="Guitarra-electrica">Guitarra electrica</option> 
-                    <option value="Piano">piano</option>
+                    <option value="Guitarra-electrica">Guitarra eléctrica</option> 
+                    <option value="Piano">Piano</option>
                     <option value="Violin">Violin</option>
                     <option value="Bajo">Bajo</option>
                     <option value="Bateria">Batería</option>
                 </select>
-
                 <button type="submit" class="input">Enviar Consulta</button>
-
-            </section>
-
-        <section class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.215386593565!2d-69.9298775!3d18.4698911!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x8eaf89ddc19f5c31%3A0x20fc5fa9155c49a4!2sInstrumentos%20Fernando%20Giraldez!5e0!3m2!1sen!2sdo!4v1725677119802!5m2!1sen!2sdo" width="400" height="300" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </form>
         </section>
 
+        <section class="mapa">
+            <div class="mapa-contedor">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.215386593565!2d-69.9298775!3d18.4698911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89ddc19f5c31%3A0x20fc5fa9155c49a4!2sInstrumentos%20Fernando%20Giraldez!5e0!3m2!1sen!2sdo!4v1725677119802!5m2!1sen!2sdo" loading="lazy" class="map-iframe"></iframe>
+            </div>
+        </section>
+        
     </main>
 
     <footer id="footer_5">
-         
-                <div class="footer_logo"> 
+        <div class="footer_logo"> 
             <img src="../icons/logo-removebg-preview.png" alt="icono_logo_inferior">
-            </div>
-            
-    
-           <div class="footer_links">
+        </div>
+        <div class="footer_links">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/conceptos.html">Conceptos</a></li>
@@ -94,17 +77,13 @@
                 <li><a href="../pages/aprende-a-tocar.html">Aprende a tocar</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
-
-           </div>
-    
-         <div class="footer_redes_sociales">
-            
+        </div>
+        <div class="footer_redes_sociales">
             <a class="footer_facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a class="footer_instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             <a class="footer_youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-             
-     </footer>
+        </div>
+    </footer>
 
 </body>
 </html>

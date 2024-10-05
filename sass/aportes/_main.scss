@@ -1,85 +1,84 @@
-#aportes{
-    width: 10%0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    display: inline-block;
-    padding-left: 100px;
-    
-}
-
-.barra_1{
-    display: flex;
-    display: block;
-    padding-bottom: 30px;
-    padding-left: 400px;
-
-}
-
-.barra_2{
-    display: flex;
-    display: block;
-    padding-bottom: 30px;
-    padding-left: 400px;
-
-}
-
-.barra_3{
-    display: flex;
-    display: block;
-    padding-left: 400px;
-    
-}
-
-.aportes-img{
-    width: 30%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    
-}
-
-
-
-.rating{
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    font-size: 2rem;
-   display: inline-flex;
-   padding-left: 400px;
-   }
-   
-           .rating{
-               direction: rtl;
-               unicode-bidi: bidi-override;
-               font-size: 2rem;
-               display: inline-flex;
-           }
-   
-           .rating input{
-               display: none;
-           }
-   
-           .rating label{
-               color: #ddd;
-               cursor: pointer;
-               padding: 0 0.1rem;
-           }
-   
-           .rating input:checked ~ label,
-           .rating label:hover,
-           .rating label:hover ~ label {
-               color: gold;
-           }
-           
-           
 $transparente: rgba(255, 255, 255, 0.5); // Color blanco con 50% de opacidad
 
+#aportes {
+    width: 100%; // Cambia el ancho para que sea 100% en dispositivos pequeños
+    height: auto; // Ajusta la altura
+    display: flex;
+    flex-direction: column; // Cambia la dirección a columna
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; // Reduce el margen superior en móviles
+    padding: 0 20px; // Padding lateral para móviles
+}
+
+.barra_1, .barra_2, .barra_3 {
+    width: 100%; // Asegúrate de que cada barra ocupe el 100% del ancho
+    display: flex;
+    justify-content: center; // Centrar el contenido
+    padding-bottom: 20px; // Ajusta el padding
+}
+
+.aportes-img {
+    width: 50%; // Cambia el ancho para que sea más grande en móviles
+    height: auto; // Mantiene la proporción de la imagen
+    display: flex;
+    align-items: center;
+    justify-content: center; // Centra la imagen
+    margin-bottom: 30px;
+}
+
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2rem; /* Tamaño de las estrellas */
+    display: inline-flex; /* Cambia a flex para alineación */
+    justify-content: center; /* Centra el contenido */
+    margin-top: 10px; /* Espacio entre el texto y las estrellas */
+    
+}
+
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #ddd;
+    cursor: pointer;
+    padding: 0 0.1rem;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
 .contenido {
-  padding: 20px;
-  background-color: $transparente;
-  border-radius: 10px; // Opcional, para bordes redondeados
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
+    padding: 10px;
+    background-color: $transparente;
+    border-radius: 10px; // Opcional, para bordes redondeados
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra para darle un efecto
+}
+
+@media(max-width: 600px) {
+    #aportes {
+        margin-top: 20px; // Menos margen en móviles
+        padding-left: 10px; // Padding más pequeño
+        padding-right: 10px; // Padding más pequeño
+    }
+    
+    .barra_1, .barra_2, .barra_3 {
+        flex-direction: column; // Cambiar la dirección a columna en móviles
+        padding-left: 0; // Elimina el padding lateral
+        padding-bottom: 15px; // Ajusta el padding
+    }
+
+    .aportes-img {
+        width: 100%; // Asegúrate de que la imagen ocupe el 100% en móviles
+    }
+
+    .rating {
+        font-size: 1.5rem; // Reduce el tamaño de la calificación en móviles
+    }
 }

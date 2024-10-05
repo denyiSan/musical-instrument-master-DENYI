@@ -1,4 +1,4 @@
-#aprendeATocar{
+#aprendeATocar {
     width: 100%;
     height: auto;
     display: flex;
@@ -6,11 +6,36 @@
     align-items: center;
 }
 
-
-.aprendeGuitarra , .aprendeViolin , .aprendeBajo , .aprendePiano{
-    width: 600px;
+.videos {
+    display: flex;
+    flex-direction: column; // Coloca las secciones en columna
+    align-items: center; // Centra los elementos
+    width: 100%; // Ancho completo
+    padding: 20px; // Espacio alrededor
 }
 
-.barra{
+.aprendeGuitarra, .aprendePiano, .aprendeViolin, .aprendeBajo {
+    width: 100%; // Para que ocupe todo el ancho del contenedor
+    max-width: 600px; // Máximo ancho para escritorio
+    margin-bottom: 30px; // Espacio entre secciones
+    text-align: center; // Centra el texto
+}
+
+video {
+    width: 100%; // Ancho completo
+    height: auto; // Mantiene la proporción
+}
+
+.barra {
     padding: 50px;
+}
+
+@media (max-width: 600px) {
+    .barra {
+        padding: 20px; // Reduce el padding en dispositivos móviles
+    }
+    
+    .aprendeGuitarra, .aprendePiano, .aprendeViolin, .aprendeBajo {
+        max-width: 90%; // Ancho máximo en móviles
+    }
 }
